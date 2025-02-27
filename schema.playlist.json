@@ -42,7 +42,10 @@
                                 "maximum": 59
                             }
                         },
-                        "required": ["minutes", "seconds"]
+                        "required": [
+                            "minutes",
+                            "seconds"
+                        ]
                     },
                     "statistics": {
                         "type": "object",
@@ -60,26 +63,45 @@
                                 "minimum": 0
                             }
                         },
-                        "required": ["plays", "likes", "shares"]
+                        "required": [
+                            "plays",
+                            "likes",
+                            "shares"
+                        ]
                     },
                     "inDevice": {
-                        "type": ["boolean", "null"]
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
                     },
                     "platforms": {
                         "type": "array",
                         "minItems": 1,
                         "items": {
                             "type": "string",
-                            "enum": ["Spotify", "AppleMusic", "Youtube"]
+                            "enum": [
+                                "Spotify",
+                                "AppleMusic",
+                                "Youtube"
+                            ]
                         }
                     }
                 },
                 "required": [
-                    "title", "artist", "album", "releaseYear", 
-                    "duration", "statistics", "inDevice", "platforms"
+                    "title",
+                    "artist",
+                    "album",
+                    "releaseYear",
+                    "duration",
+                    "statistics",
+                    "inDevice",
+                    "platforms"
                 ]
             }
         }
     },
-    "required": ["playlist"]
+    "required": [
+        "playlist"
+    ]
 }
